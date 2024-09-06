@@ -1,0 +1,2 @@
+"# COMP229-Web-Application-Development" 
+A repo to track my code for my 3rd semester class COMP229 - Web Application Development. This course will teach me to design, code, and test a full-stack web application. The major topics covered are: frontend and backend development, connecting to various databases or data stores to query or manipulate data and display the results in the browser, securing and deploying complex web applications on production servers, applying various open-source frontend and backend frameworks to build a web application and API. 
