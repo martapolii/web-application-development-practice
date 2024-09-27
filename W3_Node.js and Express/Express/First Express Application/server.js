@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 app.get("/", (req, res) => {
- res.send("Hello there its mee!!!hey there")
+res.send("Hello there its mee!!!hey there")
 });
 app.listen(config.port, (err) => { 
 if (err) {
