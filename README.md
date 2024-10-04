@@ -1,2 +1,14 @@
 "# COMP229-Web-Application-Development" 
-A repo to track my code for my 3rd semester class COMP229 - Web Application Development. This course will teach me to design, code, and test a full-stack web application. The major topics covered are: frontend and backend development, connecting to various databases or data stores to query or manipulate data and display the results in the browser, securing and deploying complex web applications on production servers, and applying various open-source frontend and backend frameworks to build a web application and API. 
+
+This repository is a work in progress for the Web Application Development (COMP-229) course at Centennial College. The course focuses on designing, developing, and testing full-stack web applications using various modern web technologies.
+
+Key Concepts
+- Node.js: Setting up server-side environments and creating REST APIs.
+- Express.js: Building fast and scalable web applications.
+- MongoDB: Storing and retrieving data using a NoSQL database.
+- React.js: Developing dynamic front-end interfaces.
+- Authentication: Implementing secure user authentication and authorization.
+- Full-Stack Web Development: Integrating the front-end and back-end using RESTful APIs.
+- Database Connectivity: CRUD operations and ensuring data integrity.
+- Production Deployment: Deploying web applications on platforms like AWS or Heroku.
+- Security: Implementing OAuth2, JWT, and secure session management.
