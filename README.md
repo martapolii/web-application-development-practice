@@ -1,6 +1,6 @@
-"# COMP229-Web-Application-Development" 
+"# Web Application development practice
 
-This repository is a work in progress for the Web Application Development (COMP-229) course at Centennial College. The course focuses on designing, developing, and testing full-stack web applications using various modern web technologies.
+This repository focuses on designing, developing, and testing full-stack web applications using various modern web technologies.
 
 Key Concepts
 - Node.js: Setting up server-side environments and creating REST APIs.
