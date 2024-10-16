@@ -1,0 +1,18 @@
+{
+  "name": "vite_app",
+  "version": "1.0.0",
+  "description": "React front, express backend application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently 'vite' 'nodemon server.js'"
+  },
+  "author": "Marta Polishchuk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
