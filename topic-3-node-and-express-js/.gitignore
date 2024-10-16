@@ -1,0 +1,15 @@
+# ignore eclipse metadata files
+/.metadata/
+/.settings/
+/.classpath
+/.project
+/.log
+*.log
+
+#ignore plug-in configurations
+/.plugins/
+/*.prefs
+
+#ignore maven
+/.plugins/
+/*.prefs
