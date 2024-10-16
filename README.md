@@ -1,4 +1,4 @@
-"# Web-Application-Development" 
+"# Web Application development practice
 
 This repository focuses on designing, developing, and testing full-stack web applications using various modern web technologies.
 
