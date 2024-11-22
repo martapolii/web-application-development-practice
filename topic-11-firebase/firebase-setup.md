@@ -100,3 +100,8 @@ const auth = getAuth(app);
 
 9. Create the profile page in `profile.js`
   - users will be redirected to this app upon succesful login/authentication
+
+10. need to serve created pages by setting up a `react-router-dom`
+  - install it by running:
+  `npm i react-router-dom --save`
+  
