@@ -89,3 +89,5 @@ const auth = getAuth(app);
   - will collect email + pass from user 
   - create a new component `Signup.js` (see code in file)
   - will track email + password using state 
+
+8. Create the sign-in form (see `Signin.js`)
