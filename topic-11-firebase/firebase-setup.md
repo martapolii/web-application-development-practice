@@ -115,5 +115,10 @@ const auth = getAuth(app);
 11. add `AuthContext.js` in `src`
   - create and export `AuthContext`
 
+### Create Authentication Context
 12. create `AuthProvider.js` to allow components to use `AuthContext`
 13. wrap routes in `index.js` with AuthProvider 
+
+## Create Protected Routes
+- can protect sensitive routes by checking authentication status of users navigating to a protected page (Profile)
+1. modify `Profile.js` to redirect a user if not authenticated
