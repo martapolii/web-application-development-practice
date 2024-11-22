@@ -116,3 +116,4 @@ const auth = getAuth(app);
   - create and export `AuthContext`
 
 12. create `AuthProvider.js` to allow components to use `AuthContext`
+13. wrap routes in `index.js` with AuthProvider 
