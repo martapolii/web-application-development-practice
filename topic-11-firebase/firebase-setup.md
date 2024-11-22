@@ -1,4 +1,16 @@
-**In visual studio:**
+ #Creating a react app with firebase authentication
+
+ ---
+ 
+ ## **to get Firebase configuration object from firebase.com:**
+ (need for step 5 in visual studio steps below)
+  1. create a project
+  2. rehister the app (<> icon)
+  3. copy the configuration from under `Add Firebase SDK`
+
+---
+
+## **In visual studio:**
 1. Create a react app with firebase authentication 
  `npx create-react-app react-auth-firebase`
 
@@ -77,12 +89,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 ```
-
-  **to get Firebase configuration object from firebase.com:**
-  1. create a project
-  2. rehister the app (<> icon)
-  3. copy the configuration from under `Add Firebase SDK`
-
 6. need to create 3 functions to authenticate users: signUp, signIn, signOut (see src/firebase_setup/firebase.js)
    
 7. create a react form, `signup.js`
@@ -91,3 +97,6 @@ const auth = getAuth(app);
   - will track email + password using state 
 
 8. Create the sign-in form (see `Signin.js`)
+
+9. Create the profile page in `profile.js`
+  - users will be redirected to this app upon succesful login/authentication
