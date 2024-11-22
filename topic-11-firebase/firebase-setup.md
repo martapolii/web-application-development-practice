@@ -123,5 +123,20 @@ const auth = getAuth(app);
 - can protect sensitive routes by checking authentication status of users navigating to a protected page (Profile)
 14. modify `Profile.js` to redirect a user if not authenticated
 
-15. run the app with `npm start`
+15. run the app with `npm start` from `react-auth-firebase` folder 
   (had to make changes to index.js because was using outdated method)
+  - mount path in browser window to `http://localhost:3000/login`
+  - page will look like this: ![alt text](image-1.png)
+
+---
+
+### Activate the Authentication on firebase.com
+1. `authentication` > `get started` > `sign-in method` > `email/password`
+2. toggle `enable` and `save`
+3. `add new provider` 
+4. click `authentication` in left nav bar then `add user`, then create a new user
+
+### Test the Authentication
+5. go back to your app and attempt to log in
+
+** DOESN'T WORK ** - I signed in but was not redirected
