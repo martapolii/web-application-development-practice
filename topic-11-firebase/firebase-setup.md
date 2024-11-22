@@ -1,16 +1,16 @@
- #Creating a react app with firebase authentication
+ # Creating a react app with firebase authentication
 
  ---
- 
- ## **to get Firebase configuration object from firebase.com:**
+ ## Create a Firebase App
+ ### **to get Firebase configuration object from firebase.com:**
  (need for step 5 in visual studio steps below)
   1. create a project
   2. rehister the app (<> icon)
   3. copy the configuration from under `Add Firebase SDK`
 
 ---
-
-## **In visual studio:**
+## Create a React App
+### **In visual studio:**
 1. Create a react app with firebase authentication 
  `npx create-react-app react-auth-firebase`
 
@@ -55,6 +55,7 @@ cd react-auth-firebase
 - now have a react app with firebase in browser:
 ![alt text](image.png)
 
+### Authenticate Users with Firebase Functions
 3. install firebase 
 `npm i firebase -- save`
 
@@ -89,8 +90,10 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 ```
+
 6. need to create 3 functions to authenticate users: signUp, signIn, signOut (see src/firebase_setup/firebase.js)
    
+### Create React Forms 
 7. create a react form, `signup.js`
   - will collect email + pass from user 
   - create a new component `Signup.js` (see code in file)
@@ -101,8 +104,13 @@ const auth = getAuth(app);
 9. Create the profile page in `profile.js`
   - users will be redirected to this app upon succesful login/authentication
 
+### Create Authentication Routes
 10. need to serve created pages by setting up a `react-router-dom`
   - install it by running:
   `npm i react-router-dom --save`
   - configure it in `index.js` (see file)
   
+### Using React Context to track user authentication status
+- use React context to track a users authentication status across the app, so you know whether they are logged in or not 
+11. add `AuthContext.js` in `src`
+  - create and export `AuthContext`
