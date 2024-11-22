@@ -46,9 +46,46 @@ cd react-auth-firebase
 3. install firebase 
 `npm i firebase -- save`
 
+4. create a `firebase_setup` folder in `src`
 
-**On firebase.com:**
-1. create a project
-2. rehister the app (<> icon)
-3. copy the configuration from under `Add Firebase SDK`
+5. create `firebase.js` in this folder and initialize firebase using your Firebase configuration object (Firebase SDK) + import firebase modules 
+example:
+```
+import { initializeApp } from "firebase/app";
+import { getFirestore, addDoc, collection } from "firebase/firestore";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut as firebaseSignout,
+} from "firebase/auth";
+
+const firebaseConfig = {
+apiKey: "AIzaSyA2xhc_aA8mWuYU34zqEO5AyRztSZpKPZ4",
+authDomain: "my-project-1531702898498.firebaseapp.com",
+databaseURL: "https://my-project-1531702898498-default-rtdb.firebaseio.com",
+projectId: "my-project-1531702898498",
+storageBucket: "my-project-1531702898498.appspot.com",
+messagingSenderId: "38039037147",
+appId: "1:38039037147:web:47d089daa5c016f81298fe",
+measurementId: "G-SBPW7H55B0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+```
+
+  **to get Firebase configuration object from firebase.com:**
+  1. create a project
+  2. rehister the app (<> icon)
+  3. copy the configuration from under `Add Firebase SDK`
+
+6. need to create 3 functions to authenticate users: signUp, signIn, signOut (see src/firebase_setup/firebase.js)
    
+7. create a react form, `signup.js`
+  - will collect email + pass from user 
+  - create a new component `Signup.js` (see code in file)
+  - will track email + password using state 
