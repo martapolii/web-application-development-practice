@@ -104,4 +104,5 @@ const auth = getAuth(app);
 10. need to serve created pages by setting up a `react-router-dom`
   - install it by running:
   `npm i react-router-dom --save`
+  - configure it in `index.js` (see file)
   
