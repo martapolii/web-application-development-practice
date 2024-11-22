@@ -121,4 +121,7 @@ const auth = getAuth(app);
 
 ## Create Protected Routes
 - can protect sensitive routes by checking authentication status of users navigating to a protected page (Profile)
-1. modify `Profile.js` to redirect a user if not authenticated
+14. modify `Profile.js` to redirect a user if not authenticated
+
+15. run the app with `npm start`
+  (had to make changes to index.js because was using outdated method)
