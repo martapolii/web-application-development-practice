@@ -114,3 +114,5 @@ const auth = getAuth(app);
 - use React context to track a users authentication status across the app, so you know whether they are logged in or not 
 11. add `AuthContext.js` in `src`
   - create and export `AuthContext`
+
+12. create `AuthProvider.js` to allow components to use `AuthContext`
